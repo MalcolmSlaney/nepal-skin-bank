@@ -9,6 +9,25 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+		 window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '898256540242971',
+	          xfbml      : true,
+	          version    : 'v2.4'
+	        });
+	      };
+
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+		</script>
 
 		<!-- Header -->
 			<section id="header">
@@ -18,12 +37,11 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Find Us</a></li>
-						<li><a href="#three">The Problem</a></li>
-						<li><a href="#four">Get Involved</a></li>
-						<li><a href="#five">Recent Accomplishments</a></li>
-						<li><a href="#six">Contact the Team</a></li>
+						<li><a href="#one" class="active">Register</a></li>
+						<li><a href="#two">Learn More</a></li>
+						<li><a href="#three">Raise Awareness</a></li>
+						<li><a href="#four">Recent Activity</a></li>
+						<li><a href="#five">About Us</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -42,28 +60,14 @@
 										<p>Saving lives with donor skin grafts.</p>
 									</header>
 									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
-									<a href="kirtipur.html" class="button special">Learn more about the Kirtipur Hospital Burn Unit</a>
+									<a href="kirtipur.html" class="button special">Register to donate</a>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="container">
-									<h3>Find Us</h3>
-									<p>The Nepal Skin Bank is located at Kirtipur Hospital. 
-									<br> <strong>Opening Hours:</strong>
-									<br> <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618, Nepal
-									<br> <strong>Phone:</strong> 0701 504 7537
-									<br> <strong>Facebook:</strong> <a href="https://www.facebook.com/nepalskinbank">facebook.com/nepalskinbank</a>
-
-								</p>
-								</div>
-							</section>
-
-							<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>The Problem</h3>
+									<h3>Learn More</h3>
 									<p>Learn more about how you can help the Nepal Skin Bank save lives with this short animation.</p>
 									<iframe width="560" height="315" src="https://www.youtube.com/embed/nSEfUzNFSwQ" frameborder="0" allowfullscreen></iframe><br><br>
 									<blockquote>Acute burns account for more than 320,000 deaths a year. <br>Over 50% of those deaths occur in South East Asia.</blockquote>
@@ -77,60 +81,37 @@
 								</div>
 							</section>
 
-							<!-- Four -->
+							<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Raise Awareness</h3>
+									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+									<div style="width:300px;height:300px;">
+									<a href="#" class="image fit"><img src="images/box.jpg" alt="" /></a>
+								</div>
+								</div>
+							</section>
+
+						<!-- Four -->
 							<section id="four">
 								<div class="container">
-									<h3>Get Involved</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										
-										<li><a href="https://docs.google.com/forms/d/1fShugPDqOBIzJ0WjzbXvgajG7lROs4XTpldb4anohhI/viewform" class="button special">Register to Donate</a> <br> <br> <a href="https://www.facebook.com/nepalskinbank" class="button special">Like us on Facebook<a></li>
-										<li><strong>Get Your Club Involved</strong><br>The Nepal Skin Bank is focused on equipping new champions through philanthropic organizations in Kathmandu.
-										Request materials for your club by contacting the team below.</li>
-									</ul>
+									<h3>Recent Activity</h3>
+									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+										<div class="fb-page" data-href="https://www.facebook.com/nepalskinbank" data-width="500" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+										</div>
+
 								</div>
 							</section>
 
 						<!-- Five -->
 							<section id="five">
 								<div class="container">
-									<h3>Recent Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/donation.png" alt="" /></a>
-											<div class="inner">
-												<h4>Skin Bank Recieves its First Donation</h4>
-												<p>On May 25, 2015, less than 8 months after lunching, the skin bank received its first skin donation from a donor who provided instructions for his body to be donated for medical purpose following his death.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/donor_card.png" alt="" /></a>
-											<div class="inner">
-												<h4>Skin Bank Reaches Fifty Registered Donors</h4>
-												<p>Every donor that registers receives a donor registration card that contains the contact information of the skin bank so that donors always have this vital information on hand. The cards also serve as a symbol of the donor's commitment. </p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/kirtipur.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Skin Bank Launched</h4>
-												<p>The skin bank launched in October of 2014. The facility is fully functional and the highly trained team is ready to take calls and collect donations from anywhere in Kathmandu.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-
-						<!-- Six -->
-							<section id="six">
-								<div class="container">
-									<h3>Contact The Team</h3>
+									<h3>About Us</h3>
 									<p>
 									<br> <strong>Email:</strong>
 									<br> <strong>Phone:</strong> 0701 504 7537
 									<br> <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618, Nepal
-									<div style="text-align:center;"><h3>Partnerships</h3>Stanford University, ReSurge International, Rotary International, Lions International</div>
+									<div style="text-align:center;"><h3>Partnerships</h3>Nepal Eye Bank, Stanford University, ReSurge International, Rotary International, Lions International</div>
 									</p>
 										<div class="box alt">
 											<div class="row 50% uniform">
