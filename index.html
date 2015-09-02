@@ -7,6 +7,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="javascript" href="js/tabletop.js"/>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -28,6 +29,24 @@
 		}(document, 'script', 'facebook-jssdk'));
 
 		</script>
+		<script type="text/javascript">
+  window.onload = function() { init() };
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                     callback: showInfo,
+                     simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    alert("Successfully processed!")
+    console.log(data);
+  }
+</script>
+
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF1b5wuFNI-6IoXyDd1LJefvIBIgneoho&sensor=false"></script>
 
 		<!-- Header -->
 			<section id="header">
@@ -44,6 +63,10 @@
 						<li><a href="#five">About Us</a></li>
 					</ul>
 				</nav>
+				<!--<div class="circle-text"><div>37</div></div>
+				<div style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;">Donors Registered!</p></div>-->
+
+				
 			</section>
 
 		<!-- Wrapper -->
@@ -59,7 +82,7 @@
 										<p>Saving lives with donor skin grafts.</p>
 									</header>
 									<p>The Nepal Skin Bank, located at Kirtipur Hospital, is the first and only of its kind in Nepal. Together with generous skin donors from across Nepal, the Kirtipur medical team is dedicated to saving the lives of severe burn victims using donor skin grafts. <strong>Join the cause by registering as a skin donor today using the form below, or learn more by reading on.</strong> </p>
-									<a href="www.nepalskinbank.com" class="button special">Register to Donate</a> TODO: add ticker with # donors registered
+									<a href="www.nepalskinbank.com" class="button special">Register to Donate</a> 
 								</div>
 							</section>
 
@@ -68,7 +91,7 @@
 								<div class="container">
 									<h3>Learn More</h3>
 									<p>Learn more about how you can help the Nepal Skin Bank save lives with this short animation.</p>
-									<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/watch?v=M9qrJxq1NCw&' frameborder='0' allowfullscreen></iframe></div>
+									<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/v/M9qrJxq1NCw&output=embed' frameborder='0' allowfullscreen></iframe></div>
 									<br><br>
 
 									<!--<p>Check out the presentation below to learn more about why burns are such a serious problem in Nepal, and how the skin bank plans to change that.</p>
@@ -116,6 +139,7 @@
 									<br> <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618, Nepal
 									<br> <br><i>Follow the map below to find us.</i>
 									<div class="12u"><span class="image fit"><img src="images/map.png" alt="" /></span></div>
+									<div class="map"></div>
 									<div style="text-align:center;"><h3>Partnerships</h3>Nepal Eye Bank, Stanford University, ReSurge International, Rotary International, Lions International</div>
 									</p>
 										<div class="box alt">
