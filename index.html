@@ -1,179 +1,265 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Nepal Skin Bank</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link rel="javascript" href="js/tabletop.js"/>
-	</head>
-	<body>
-		<div id="fb-root"></div>
-		<script>
-		 window.fbAsyncInit = function() {
-	        FB.init({
-	          appId      : '898256540242971',
-	          xfbml      : true,
-	          version    : 'v2.4'
-	        });
-	      };
+<head>
+    <title>Nepal Skin Bank</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link href="js/tabletop.js" rel="javascript">
+</head>
 
-		(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+<body>
+    <div id="fb-root"></div><script>
+     window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '898256540242971',
+              xfbml      : true,
+              version    : 'v2.4'
+            });
+          };
 
-		</script>
-		<script type="text/javascript">
-  window.onload = function() { init() };
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 
-  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
+    </script> <script type="text/javascript">
+window.onload = function() { init() };
 
-  function init() {
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
+
+    function init() {
     Tabletop.init( { key: public_spreadsheet_url,
                      callback: showInfo,
                      simpleSheet: true } )
-  }
+    }
 
-  function showInfo(data, tabletop) {
+    function showInfo(data, tabletop) {
     alert("Successfully processed!")
     console.log(data);
-  }
-</script>
+    }
+    </script> 
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF1b5wuFNI-6IoXyDd1LJefvIBIgneoho&sensor=false"></script>-->
+     <!-- Header -->
 
- <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF1b5wuFNI-6IoXyDd1LJefvIBIgneoho&sensor=false"></script>-->
+    <section id="header">
+        <header>
+            <h1 id="logo"><a href="#">Nepal Skin Bank</a></h1>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1 id="logo"><a href="#">Nepal Skin Bank</a></h1>
-					<p>Saving lives with donor skin grafts.</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">Register</a></li>
-						<li><a href="#two">Learn More</a></li>
-						<li><a href="#three">Raise Awareness</a></li>
-						<li><a href="#four">Recent Activity</a></li>
-						<li><a href="#five">About Us</a></li>
-					</ul>
-				</nav>
-				<!--<div class="circle-text"><div>37</div></div>
-				<div style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;">Donors Registered!</p></div>-->
+            <p>Saving lives with donor skin grafts.</p>
+        </header>
 
-				
-			</section>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a class="active" href="#one">Register</a>
+                </li>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Main -->
-					<div id="main">
+                <li>
+                    <a href="#two">Learn More</a>
+                </li>
 
-						<!-- One -->
-							<section id="one">
-								<div class="container">
-									<header class="major">
-										<h2>Nepal Skin Bank</h2>
-										<p>Saving lives with donor skin grafts.</p>
-									</header>
-									<p>The Nepal Skin Bank, located at Kirtipur Hospital, is the first and only of its kind in Nepal. Together with generous skin donors from across Nepal, the Kirtipur medical team is dedicated to saving the lives of severe burn victims using donor skin grafts. <strong>Join the cause by registering as a skin donor today using the form below, or learn more by reading on.</strong> </p>
-									<a href="www.nepalskinbank.com" class="button special">Register to Donate</a> 
-								</div>
-							</section>
+                <li>
+                    <a href="#three">Raise Awareness</a>
+                </li>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Learn More</h3>
-									<p>Learn more about how you can help the Nepal Skin Bank save lives with this short animation.</p>
-									<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/v/M9qrJxq1NCw&output=embed' frameborder='0' allowfullscreen></iframe></div>
-									<br><br>
+                <li>
+                    <a href="#four">Recent Activity</a>
+                </li>
 
-									<!--<p>Check out the presentation below to learn more about why burns are such a serious problem in Nepal, and how the skin bank plans to change that.</p>
-									<iframe src="https://www.slideshare.net/slideshow/embed_code/key/htgUJjxSrTl4O" width="560" height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br><br>-->
+                <li>
+                    <a href="#five">About Us</a>
+                </li>
+            </ul>
+        </nav><!--<div class="circle-text"><div>37</div></div>
+                <div style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;">Donors Registered!</p></div>-->
+    </section><!-- Wrapper -->
 
-									<h4>Questions?</h4>
-									<p>Understand the answers to common questions about skin donation process and the benefits of becoming a donor by reading our frequently asked questions.</p>
-									<a href="faq_nep.pdf" class="button special">Frequently Asked Questions</a>
-									<!--<a href="faq_eng.pdf" class="button special">FAQ - Nepali</a>-->
-								</div>
-							</section>
+    <div id="wrapper">
+        <!-- Main -->
 
-							<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Raise Awareness</h3>
+        <div id="main">
+            <!-- One -->
 
-									Skin donation is still a new concept in Nepal.  Help us change that by sharing this website with your family, friends and co-workers.  Are you a member of a club in Kathmandu?  Our new Champion in a Box toolkit provides all of the resources your members need to raise awareness about skin donation in their communities. <strong>Contact us to get your club involved by participating in our next "Training of Champions."</strong> </p>
-									<div style="width:300px;height:300px;">
-									<a href="#" class="image fit"><img src="images/box.jpg" alt="" /></a>
-								</div>
-								</div>
-							</section>
+            <section id="one">
+                <div class="container">
+                    <header class="major">
+                        <h2>Nepal Skin Bank</h2>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Recent Activity</h3>
+                        <p>Saving lives with donor skin grafts.</p>
+                    </header>
 
-										<div class="fb-page" data-href="https://www.facebook.com/nepalskinbank" data-tabs="timeline" data-width="500" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/nepalskinbank"><a href="https://www.facebook.com/nepalskinbank">Nepal Skin Bank</a></blockquote></div></div>
-										</div>
+                    <p>The Nepal Skin Bank, located at Kirtipur Hospital, is
+                    the first and only of its kind in Nepal. Together with
+                    generous skin donors from across Nepal, the Kirtipur
+                    medical team is dedicated to saving the lives of severe
+                    burn victims using donor skin grafts. <strong>Join the
+                    cause by registering as a skin donor today using the form
+                    below, or learn more by reading on.</strong></p><a class=
+                    "button special" href=
+                    "http://www.nepalskinbank.com">Register to Donate</a>
+                </div>
+            </section><!-- Two -->
 
-								</div>
-							</section>
+            <section id="two">
+                <div class="container">
+                    <h3>Learn More</h3>
 
-						<!-- Five -->
-							<section id="five">
-								<div class="container">
-									<h3>About Us</h3>
-									<p>
-									We are a highly trained team of medical professionals working in partnership with international NGOs to reduce burn-related fatalities in Nepal, the epicenter of the global burn crisis. The Nepal Skin Bank is a new facility, located at Kirtipur Hospital. We accept donations from across Kathmandu Valley and helps patients from all over Nepal.	
-									<br>
-									<br> <strong>Email:</strong> nepalskinbank@gmail.com
-									<br> <strong>Phone:</strong> 0701 504 7537
-									<br> <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618, Nepal
-									<br> <br><i>Follow the map below to find us.</i>
-									<div class="12u"><span class="image fit"><img src="images/map.png" alt="" /></span></div>
-									<div style="text-align:center;"><h3>Partnerships</h3>Nepal Eye Bank, Stanford University, ReSurge International, Rotary International, Lions International</div>
-									</p>
-										<div class="box alt">
-											<div class="row 50% uniform">
+                    <p>Learn more about how you can help the Nepal Skin Bank
+                    save lives with this short animation.</p><style>
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+                    </style>
 
-												<div class="4u"><span class="image fit"><img src="images/lionlogo.jpg" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/resurge_logo.gif" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/rotary_logo_detail.png" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/stanford logo.png" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/tilganga.jpg" alt="" /></span></div>
-											</div>
-										</div>
-								</div>
-							</section>
-					</div>
+                    <div class='embed-container'>
+                        <iframe frameborder='0' src=
+                        'https://www.youtube.com/v/M9qrJxq1NCw&output=embed'></iframe>
+                    </div><br>
+                    <br>
+                    <!--<p>Check out the presentation below to learn more about why burns are such a serious problem in Nepal, and how the skin bank plans to change that.</p>
+                                    <iframe src="https://www.slideshare.net/slideshow/embed_code/key/htgUJjxSrTl4O" width="560" height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br><br>-->
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>Site/Template: Clementine Jacoby/<a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+                    <h4>Questions?</h4>
 
-			</div>
+                    <p>Understand the answers to common questions about skin
+                    donation process and the benefits of becoming a donor by
+                    reading our frequently asked questions.</p><a class=
+                    "button special" href="faq_nep.pdf">Frequently Asked
+                    Questions</a> 
+                    <!--<a href="faq_eng.pdf" class="button special">FAQ - Nepali</a>-->
+                </div>
+            </section><!-- Three -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+            <section id="three">
+                <div class="container">
+                    <h3>Raise Awareness</h3>
 
-	</body>
+                    <p> Skin donation is still a new
+                    concept in Nepal. Help us change that by sharing this website with your family, friends and co-workers. Are you a
+                    member of a club in Kathmandu? Our new Champion in a Box
+                    toolkit provides all of the resources your members need to
+                    raise awareness about skin donation in their communities.
+                    <strong>Contact us to get your club involved by
+                    participating in our next "Training of Champions."</strong>
+                    </p>
+                    <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="6u">
+                            <span class="image fit"><img alt="" src=
+                            "images/box.jpg"></span>
+                        </div>
+
+                        <div class="6u">
+                            <span class="image fit"><img alt="" src=
+                            "images/tot.jpg"></span>
+                            <p style="font-size:1.5em;">New champions with their boxes at our last Training of Champions.</p>
+                        </div>
+
+                    </div>
+                     
+                </div>
+                </div>
+            </section><!-- Four -->
+
+            <section id="four">
+                <div class="container">
+                    <h3>Recent Activity</h3>
+
+                    <div class="fb-page" data-adapt-container-width="true"
+                    data-height="800" data-hide-cover="true" data-href=
+                    "https://www.facebook.com/nepalskinbank"
+                    data-show-facepile="true" data-small-header="false"
+                    data-tabs="timeline" data-width="500">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite=
+                            "https://www.facebook.com/nepalskinbank">
+                                <a href=
+                                "https://www.facebook.com/nepalskinbank">Nepal
+                                Skin Bank</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><!-- Five -->
+
+        <section id="five">
+            <div class="container">
+                <h3>About Us</h3>
+
+                <p>We are a highly trained team of medical professionals
+                working in partnership with international NGOs to reduce
+                burn-related fatalities in Nepal, the epicenter of the global
+                burn crisis. The Nepal Skin Bank is a new facility, located at
+                Kirtipur Hospital. We accept donations from across Kathmandu
+                Valley and helps patients from all over Nepal.<br>
+                <br>
+                <strong>Email:</strong> nepalskinbank@gmail.com<br>
+                <strong>Phone:</strong> 0701 504 7537<br>
+                <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618,
+                Nepal<br>
+                <br>
+                <i>Follow the map below to find us.</i></p>
+
+                <div class="12u">
+                    <span class="image fit"><img alt="" src=
+                    "images/map.png"></span>
+                </div>
+
+                <div style="text-align:center;">
+                    <h3>Partnerships</h3>Nepal Eye Bank, Stanford University,
+                    ReSurge International, Rotary International, Lions
+                    International
+                </div>
+                <p>
+
+                <div class="box alt">
+                    <div class="row 50% uniform">
+                        <div class="4u">
+                            <span class="image fit"><img alt="" src=
+                            "images/lionlogo.jpg"></span>
+                        </div>
+
+                        <div class="4u">
+                            <span class="image fit"><img alt="" src=
+                            "images/resurge_logo.gif"></span>
+                        </div>
+
+                        <div class="4u">
+                            <span class="image fit"><img alt="" src=
+                            "images/rotary_logo_detail.png"></span>
+                        </div>
+
+                        <div class="4u">
+                            <span class="image fit"><img alt="" src=
+                            "images/stanford%20logo.png"></span>
+                        </div>
+
+                        <div class="4u">
+                            <span class="image fit"><img alt="" src=
+                            "images/tilganga.jpg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- Footer -->
+
+    <section id="footer">
+        <div class="container">
+            <ul class="copyright">
+                <li>Site/Template: Clementine Jacoby/<a href=
+                "http://html5up.net">HTML5 UP</a>
+                </li>
+            </ul>
+        </div>
+    </section><!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script> <script src="assets/js/jquery.scrollzer.min.js"></script> <script src="assets/js/jquery.scrolly.min.js"></script> <script src="assets/js/skel.min.js"></script> <script src="assets/js/util.js"></script> 
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+     <script src="assets/js/main.js"></script>
+</body>
 </html>
