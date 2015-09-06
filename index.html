@@ -32,17 +32,14 @@
     </script> <script type="text/javascript">
 window.onload = function() { init() };
 
-    var public_spreadsheet_url = '1vbcB_vATaIq3XnJHepdNDe5qtqmH2sLwQUV-kRTV2zE';
+    var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1vbcB_vATaIq3XnJHepdNDe5qtqmH2sLwQUV-kRTV2zE/pubhtml?gid=1347142735&single=true';
 
     function init() {
     Tabletop.init( { key: public_spreadsheet_url,
                      callback: showInfo,
-                     simpleSheet: true } )
+                     simpleSheet: false} )
     }
-
-    function showInfo(data, tabletop) {
-    console.log(data);
-    }
+    
     </script> <!-- Header -->
 
     <section id="header">
@@ -74,8 +71,23 @@ window.onload = function() { init() };
                     <a href="#five">About Us</a>
                 </li>
             </ul>
-        </nav><!--<div class="circle-text"><div>37</div></div>
-                <div style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;">Donors Registered!</p></div>-->
+        </nav>
+
+        <div id="circle" class="circle-text"><div id="registered"></div></div>
+        <div id="registered-text" style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;"></p></div>
+        
+        <script>
+            var numRegistered = 0;
+           
+            function showInfo(data, tabletop, callback) {
+                console.log(data);
+                numRegistered = data.numResponses.elements[0].num_responses;
+                document.getElementById('registered').innerHTML = numRegistered;
+                document.getElementById('registered-text').innerHTML = "Donors Registered!";
+            }
+
+        </script>
+
     </section><!-- Wrapper -->
 
     <div id="wrapper">
