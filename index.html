@@ -7,13 +7,13 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link href="assets/css/main.css" rel="stylesheet">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <script src="assets/js/tabletop.js" type="text/javascript"></script>
 
+    <script src="assets/js/tabletop.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div id="fb-root"></div><script>
- window.fbAsyncInit = function() {
+window.fbAsyncInit = function() {
             FB.init({
               appId      : '898256540242971',
               xfbml      : true,
@@ -39,7 +39,7 @@ window.onload = function() { init() };
                      callback: showInfo,
                      simpleSheet: false} )
     }
-    
+
     </script> <!-- Header -->
 
     <section id="header">
@@ -73,11 +73,26 @@ window.onload = function() { init() };
             </ul>
         </nav>
 
-        <div id="circle" class="circle-text"><div id="registered"></div></div>
-        <div id="registered-text" style="margin-top:58%"><p style="margin-top:10px;color:white;font-size:1.3em;"></p></div>
-        
+        <nav>
+            <ul>
+                <li>
+                    <div class="circle-text" id="circle" style="margin-top:10%">
+                        <div id="registered"></div>
+                    </div>
+                </li>
+
+                <li style="list-style: none; display: inline">
+                    <div id="registered-text" style="margin-top:60%">
+                        <p style=
+                        "margin-top:10px;color:white;font-size:1.3em;">
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
         <script>
-            var numRegistered = 0;
+    var numRegistered = 0;
            
             function showInfo(data, tabletop, callback) {
                 console.log(data);
@@ -87,7 +102,6 @@ window.onload = function() { init() };
             }
 
         </script>
-
     </section><!-- Wrapper -->
 
     <div id="wrapper">
@@ -126,17 +140,21 @@ window.onload = function() { init() };
                     <h3>Learn More</h3>
 
                     <p>Learn more about how you can help the Nepal Skin Bank
-                    save lives with this short animation.</p>
-
-                    <style>
-                    .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+                    save lives with this short animation.</p><style>
+.embed-container { 
+                        position: relative; 
+                        padding-bottom: 56.25%; 
+                        height: 0; 
+                        overflow: hidden; 
+                        max-width: 100%; 
+                    } 
+                    .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
                     </style>
 
                     <div class='embed-container'>
                         <iframe frameborder='0' src=
                         'https://www.youtube.com/v/M9qrJxq1NCw&output=embed'></iframe>
-                    </div>
-                    <br>
+                    </div><br>
                     <br>
                     <!--<p>Check out the presentation below to learn more about why burns are such a serious problem in Nepal, and how the skin bank plans to change that.</p>
                                     <iframe src="https://www.slideshare.net/slideshow/embed_code/key/htgUJjxSrTl4O" width="560" height="315" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br><br>-->
@@ -145,9 +163,7 @@ window.onload = function() { init() };
 
                     <p>Understand the answers to common questions about skin
                     donation process and the benefits of becoming a donor by
-                    reading our frequently asked questions.</p>
-
-                    <a class=
+                    reading our frequently asked questions.</p><a class=
                     "button special" href="faq_eng.pdf">Frequently Asked
                     Questions</a> 
                     <!--<a href="faq_nep.pdf" class="button special">FAQ - Nepali</a>-->
@@ -191,11 +207,6 @@ window.onload = function() { init() };
                 <div class="container">
                     <h3>Recent Activity</h3>
 
-                    <!--<div class="fb-page" data-adapt-container-width="true"
-                    data-height="800" data-hide-cover="true" data-href=
-                    "https://www.facebook.com/nepalskinbank"
-                    data-show-facepile="true" data-small-header="false"
-                    data-tabs="timeline" data-width="500">-->
                     <div class="fb-page" data-adapt-container-width="true"
                     data-hide-cover="true" data-href=
                     "https://www.facebook.com/nepalskinbank"
@@ -226,23 +237,28 @@ window.onload = function() { init() };
                 Valley and helps patients from all over Nepal.<br>
                 <br>
                 <strong>Email:</strong> nepalskinbank@gmail.com<br>
-                <strong>Facebook:</strong> <a href="http://www.facebook.com/nepalskinbank">www.facebook.com/nepalskinbank</a><br>
+                <strong>Facebook:</strong> <a href=
+                "http://www.facebook.com/nepalskinbank">www.facebook.com/nepalskinbank</a><br>
+
                 <strong>Phone:</strong> 977-9860164040<br>
-                <strong>Toll Free Phone:</strong> 16600151000 <br>
+                <strong>Toll Free Phone:</strong> 16600151000<br>
                 <strong>Address:</strong> Kirtipur Ring Rd, Kathmandu 44618,
                 Nepal<br>
                 <br>
                 <i>Follow the map below to find us.</i></p>
 
-                 <div class='embed-container'>
+                <div class='embed-container'>
                     <iframe frameborder='0' src=
-                        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.250659091538!2d85.2799853286194!3d27.682521036381118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187571338993%3A0x211e5d3145f31938!2sKirtipur+Hospital%2C+Kirtipur+Ring+Rd%2C+Kathmandu+44618%2C+Nepal!5e0!3m2!1sen!2shu!4v1441440997109'>
+                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.250659091538!2d85.2799853286194!3d27.682521036381118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187571338993%3A0x211e5d3145f31938!2sKirtipur+Hospital%2C+Kirtipur+Ring+Rd%2C+Kathmandu+44618%2C+Nepal!5e0!3m2!1sen!2shu!4v1441440997109'>
                     </iframe>
                 </div><br>
 
                 <div style="text-align:center;">
                     <h3>Partnerships</h3>
-                    <p>Nepal Eye Bank, Stanford University, ReSurge International, Rotary International, Lions International</p>
+
+                    <p>Nepal Eye Bank, Stanford University, ReSurge
+                    International, Rotary International, Lions
+                    International</p>
                 </div>
 
                 <div class="box alt">
